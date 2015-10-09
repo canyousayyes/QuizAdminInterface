@@ -1,0 +1,39 @@
+body {
+	background-color: #F1F1F1;
+	font-family: "Open Sans", sans-serif;
+}
+
+#quiz-interface {
+	padding-top: 10px;
+	width: 95%;
+	margin: auto;
+}
+
+.button {
+	display: inline-block;
+	color: #555;
+	background-color: #f7F7F7;
+	border: 1px solid #CCCCCC;
+	border-radius: 3px;
+	height: 28px;
+	font-size: 13px;
+	line-height: 26px;
+	text-decoration: none;
+	margin: 0;
+	padding: 0 10px;
+	cursor: pointer;
+}
+
+.question {
+	padding: 20px 0;
+}
+
+.question-content {
+	width: 40%;
+	font-size: 14px;
+}
+
+.answer-table {
+	width: 40%;
+	text-align: left;
+}
