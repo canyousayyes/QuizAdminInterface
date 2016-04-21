@@ -68,6 +68,32 @@ In this phrase, we want to implement a basic interface in the admin panel for ed
     * Score = 7, count = 2
     * Score = 8, count = 1
 
+### Phrase 2
+
+#### Description
+
+In this phrase, we would like to add an extra feature of displaying different questions base on what readers has answered.
+
+For each question, there is an optional "Question Condition" section, which allows editor to set under what conditions this question will be displayed.
+
+The following conditions are decided:
+
+* Always display this question
+* When reader has chosen a specific answer one of the previous questions
+* When reader has achieved at least X score from the previous questions
+
+#### Task
+
+Write technical details for phrase 2, including:
+
+* Pseudocode
+* Technical decisions during the implementation, e.g.
+  * How to store the information of "Question Condition"
+  * How to update the layout according to the types of conditions, e.g.
+    * When the "at least X score" is chosen, how to update the view to show a input box for editors to input the score value
+    * How to validate the score value is valid (e.g. if the highest possible score to get in the first 2 questions is 11, we cannot let editors to set 12 in question 3)
+
+
 ## Constraints
 * Time limit is 2 hours.
 * We have included three libraries: jQuery, Backbone, underscore. Please **do not** use other third party libraries.
