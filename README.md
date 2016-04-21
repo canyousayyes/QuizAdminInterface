@@ -7,6 +7,37 @@ Suppose we want to develop a quiz feature into our website. Our editors will cre
 The quiz questions will be displayed to the readers one by one. When they have answered all questions, the final score is displayed and they can share it to any social network platforms.
 
 
+## Submission
+
+* Submit the answers via email.
+* You have to use git to commit the codes, but please **do not** push the codes to the public repository.
+* Feel free to make any changes on the provided materials to cope with your design.
+
+### Junior Engineer
+
+* Answer the Phrase 1 only. Please complete the phrase without using any third-party libraries.
+  * You are encourged to any of the Phrase 2-4. We will count as a bonus for good answers.
+  * We will not place any penalties for not answering the extra phrases or answering them poorly.
+* There's no time limit, but we expect the Phrase 1 to be completed in around 2 hours.
+* We look for:
+  * Well-organized, maintainable and readable codes.
+  * Atomic git commits with clean and meaningful messages.
+  * Proper separation in logical parts and view rendering parts.
+  * An efficient and clean algorithm for the `Calculate Possibilies` function.
+
+
+### Senior Engineer
+
+* Answer all Phrase 1-4.
+* For Phrase 1, please use any of the popular javascript MVC framework to complete it.
+* There's no time limit, but we expect all phrases to be completed in around 5 hours.
+* We look for:
+  * Sufficient skills on code structure and algorithm design.
+  * Abundant knowledge to make technical decisions.
+  * Ability to optimize existing engineering workflow.
+  * High quality architecture on software solutions and systems.
+
+
 ## Specification
 
 ### Phrase 1
@@ -67,6 +98,8 @@ In this phrase, we want to implement a basic interface in the admin panel for ed
     * Score = 6, count = 4
     * Score = 7, count = 2
     * Score = 8, count = 1
+* **(Senior engineers only)** Plese also tell us what MVC frameworks you have evaluated, and why you have chosen that framework to implement the answer.
+
 
 ### Phrase 2
 
@@ -151,18 +184,3 @@ Architect a solution that is able to:
 * Allow a large scale of data to be collected from the readers
 * Allow the data to be queried efficiently
 
-## Constraints
-* Time limit is 2 hours.
-* We have included three libraries: jQuery, Backbone, underscore. Please **do not** use other third party libraries.
-  * However, you can decide whether or not to use these libraries.
-* You have to use git to commit the codes, but please **do not** push the codes to the public repository.
-* Other than the above contraints, **you have full control to the provided materials**.
-  * Feel free to make any changes: edit the HTML, create new files, etc. It's all up to you to design and implement the solution.
-
-
-## What we look for
-* Well-organized, maintainable and readable codes.
-* Atomic git commits with clean and meaningful messages.
-* Proper separation in logical parts and view rendering parts.
-* High performance in manipulating the DOM elements.
-* An efficient and clean algorithm for the `Calculate Possibilies` function.
