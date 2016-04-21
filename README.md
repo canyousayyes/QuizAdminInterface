@@ -74,7 +74,7 @@ In this phrase, we want to implement a basic interface in the admin panel for ed
 
 In this phrase, we would like to add an extra feature of displaying different questions base on what readers has answered.
 
-For each question, there is an optional "Question Condition" section, which allows editor to set under what conditions this question will be displayed.
+For each question, there is an additional "Question Condition" section, which allows editors to set under what conditions this question will be displayed to the readers.
 
 The following conditions are decided:
 
@@ -86,13 +86,43 @@ The following conditions are decided:
 
 Write technical details for phrase 2, including:
 
-* Pseudocode
+* Pseudocode for the "Question Condition" feature
 * Technical decisions during the implementation, e.g.
   * How to store the information of "Question Condition"
   * How to update the layout according to the types of conditions, e.g.
     * When the "at least X score" is chosen, how to update the view to show a input box for editors to input the score value
-    * How to validate the score value is valid (e.g. if the highest possible score to get in the first 2 questions is 11, we cannot let editors to set 12 in question 3)
+    * How to validate the score value is reasonable (e.g. if the highest possible score to get in the first 2 questions is 11, we cannot let editors to set X=12 in question 3)
 
+### Phrase 3
+
+#### Description
+
+Suppose we have also implemented the frontend section of the quiz, and this feature has released to the public for some time.
+
+Our team continue to develop the quiz, adding and tuning the features in order to make it more attractive. Some examples maybe:
+
+* Allow readers to submit feedback after they have done the quiz
+* Allow editors to write different copywritings when the readers has achieved different ranges of scores.
+
+Our engineering team continue to develop and deploy the new features. However, there're a few incidents that, after the deployment, the quiz feature is broken.
+
+Upon inspection, we found the major problems as follows:
+
+* When the engineer develops the feature, sometimes it invloves change of  schema (e.g. adding tables for storing the user feedback), or some migration in the data storage
+* The engineer finds a large difficulty to ensure a smooth data migration. They need to do a lot of tests before and after the migration.
+* The editors feels uncomfortable to test the new features in the testing environment.
+  * The environment provides very few sample quizes. Editors think they are too different from the actual quizes.
+  * Editors need to do the tests from the beginning every time to make sure everything doesn't break. This costs a lot of time.
+
+
+#### Task
+
+* Design the workflow to improve the development, testing and deployment processes, including:
+  * How to let engineer to confirm the data migration is smooth
+  * How to make a concreate testing flow to increase the confidence
+  * How to reduce the time needed in testing without sacraficing the confidence
+
+You are free to introduce new tools / services when applicable.
 
 ## Constraints
 * Time limit is 2 hours.
