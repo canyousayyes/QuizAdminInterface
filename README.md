@@ -1,18 +1,31 @@
 # Quiz Admin Interface
-A simple interface for editing a quiz.
+
+## Introduction
+
+Suppose we want to develop a quiz feature into our website. Our editors will create a quiz with a number of questions and answers. Each answer is associated with a score (not visible to readers).
+
+The quiz questions will be displayed to the readers one by one. When they have answered all questions, the final score is displayed and they can share it to any social network platforms.
+
 
 ## Specification
+
+### Phrase 1
+
+#### Description
+
+In this phrase, we want to implement a basic interface in the admin panel for editors to edit the quiz content.
+
 * The quiz interface consists of:
-  * A "Add Question" button
+  * An "Add Question" button
   * A "Calculate Possibilities" button
   * Some (more than 1) questions. Each question consists of:
-    * A title with the index, starts from "Question 1"
+    * A title with the question number, starting from "Question 1"
     * A line of question content
     * Some answers. For simplicity, let's assume we have only four answers: A, B, C, D.
-      * Each answer is associated with a score value. The score is an integer ranged from 1 to 10.
+      * Each answer is associated with a score value. The score is an integer ranged from 0 to 10.
     * A "Remove" button. (except the first question)
 
-## Task
+#### Task
 * Implement the `Add Question` functions:
   * When the `Add Question` button is clicked, append a new question at the end.
   * The new question should contain all the contents mentioned in the specification:
@@ -46,7 +59,7 @@ A simple interface for editing a quiz.
   * As you can see, there're many possible values of the total score, and there can be many ways to achieve the same total score.
   * When the `Calculate Possibilities` button is clicked, count how many possible values of the total score.
   * For each possible value, also count how many possible ways to achieve that total score.
-  * Output the result in a popup window using javascript `alert`.
+  * Output the result using javascript `console.log`.
   * Sample output for the exmaple quiz above:
     * Score = 3, count = 2
     * Score = 4, count = 3
