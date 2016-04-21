@@ -124,6 +124,33 @@ Upon inspection, we found the major problems as follows:
 
 You are free to introduce new tools / services when applicable.
 
+### Phrase 4
+
+#### Description
+
+Suppose after a whole, our quiz feature becomes very popular that there're around 1,000 new registered users per day after taking the quiz.
+
+Currently we have around 30,000 registered users, and 500,000 readers taking the quiz.
+
+To cope with the popular demand, we have decided to open the quiz interface to the registered users. We allow them to create, edit, read, and share their own quizes using the interface.
+
+We would also want to collect data of the user-generated quizes to keep track of their performance, for example:
+
+* How many readers have taken the quiz
+* How long it takes to finish the whole quiz
+* How many readers have reshared the quiz
+
+Then we would like to generate reports from those metrics to evaluate the performance.
+
+#### Task
+
+Architect a solution that is able to:
+
+* Allow a large scale of users to edit the quiz
+* Allow a large scale of readers to take the quiz
+* Allow a large scale of data to be collected from the readers
+* Allow the data to be queried efficiently
+
 ## Constraints
 * Time limit is 2 hours.
 * We have included three libraries: jQuery, Backbone, underscore. Please **do not** use other third party libraries.
